@@ -34,7 +34,7 @@ We support the newer versions of Chrome, Firefox and Safari.
 
 ## Installation and Usage
 
-If installing on Windows, please refer to [Installation on Windows](##installation-on-windows-experimental).
+If installing on Windows, please refer to [Installation on Windows](##installation-on-windows-experimental). If installing on Ubuntu 12.04, please refer to [Installation on Ubuntu](##installation-on-ubuntu). 
 
 Requirements:
 
@@ -75,6 +75,19 @@ or use the built in basic authentication through the `--username` and `--passwor
 Cloud9 is compatible with all connect authentication layers,
 to implement your own, please see the `plugins-server/cloud9.connect.basic-auth` plugin
 on how we added basic authentication.
+
+## Installation on Ubuntu
+
+Ubuntu 12.04 version of Node/Npm will not work.  You can get use [Nvm](https://github.com/creationix/nvm) to install and manage a suitable Node version, or use the [ppa:chris-lea/node.js Node PPA](https://launchpad.net/~chris-lea/+archive/node.js/).
+For a Nvm based installation:
+
+   sudo apt-get install -y build-essential g++ curl libssl-dev apache2-utils git libxml2-dev
+   curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+   nvm install v0.8
+   nvm use v0.8
+
+Then you can follow the standard installation process.
+
 
 ## Installation on Windows (experimental)
 
